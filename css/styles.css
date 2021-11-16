@@ -1,7 +1,14 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body, header {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin: 0;
 }
 
 .imagen {
@@ -22,32 +29,28 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: 5%;
 }
 
 nav {
   width: auto;
   background-color: black;
-  padding-left: 40px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav-links {
   display: inline-flex;
   list-style: none;
   align-items: left;
-  justify-content: space-between;
-  gap: 65px;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: dimgray;
+  color: white;
 }
 
 .nav-links :hover {
@@ -71,12 +74,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
-  margin-bottom: 100px;
+  padding: 0px;
+  margin-bottom: 50px;
+  border-radius: 20px;
 }
 
 footer {
   background-color: #002050;
+  color: white;
   text-align: center;
   padding: 10px;
   margin-top: 7px;
