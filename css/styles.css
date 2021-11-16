@@ -4,22 +4,21 @@ body {
   align-items: center;
 }
 
-.cuadrado {
-  width: 500px; /* Ancho de 150 píxeles */
-  height: 500px; /* Alto de 150 píxeles */
-  background: red; /* Fondo de color rojo */
-  border: 1px solid #000; /* Borde color negro y de 1 píxel de grosor */
-  display: flex;
-  align-items: center;
-}
-
 .imagen {
   height: 100%;
   width: 100%;
 }
 
+.cuadrado {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 350px;
+  border: solid 1px black;
+}
+
 .sep {
-  margin: 40px;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -27,7 +26,7 @@ body {
 }
 
 nav {
-  width: 100%;
+  width: auto;
   background-color: black;
   padding-left: 40px;
   padding-right: 30px;
@@ -37,6 +36,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .nav-links {
   display: inline-flex;
   list-style: none;
@@ -44,6 +44,7 @@ nav {
   justify-content: space-between;
   gap: 65px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: dimgray;
@@ -56,8 +57,26 @@ nav {
   transform: translateY(5px);
 }
 
+h2 {
+  font-size: 50px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+#nosotros {
+  text-align: center;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
 footer {
-  background-color: #3383ff;
+  background-color: #002050;
   text-align: center;
   padding: 10px;
   margin-top: 7px;
