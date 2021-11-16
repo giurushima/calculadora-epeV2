@@ -9,19 +9,33 @@
     <title>Calculadora EPE</title>
   </head>
   <body>
+<header>
+  <nav>
+      <ul class="nav-links">
+        <img src="../img/logoempresa.png" class="logo" alt="Logo utn">
+          <li class="nav-item"><a href="#" class="active">Inicio</a></li>
+          <li class="nav-item"i><a href="#">Sobre nosotros</a></li>
+          <li class="nav-item"i><a href="#">Contacto</a></li>
+      </ul>
+  </nav>
+</header>
+
+<div>
+  <img src="../img/obra.jpeg" class="imagen">
+</div>
 
   <fieldset>
-  <div class="cent">
     <form>
-    <div onclick="escuchaBtn()">
+<div class="cuadrado cent sep">
+      <div onclick="escuchaBtn()">
       <p>Seleccione tipo de usuario:</p>
       <!-- <input type="radio" id="residencial" value="0.21"required/>
       <label for="residencial">Residencial</label>
       <input type="radio" id="industrial" value="0.28" required/>
       <label for="industrial">Industrial</label> -->
 
-      <input type="radio" required name="driver" id="residencial" value="0.21"><label for="r1">Residencial</label>
-      <input type="radio" required name="driver" id="industrial" value="0.28"><label for="r2">Industrial</label>
+      <input type="radio" required id="residencial" value="0.21"><label for="r1">Residencial</label>
+      <input type="radio" required id="industrial" value="0.28"><label for="r2">Industrial</label>
     </div>
 
     <p>Seleccione zona del domicilio:</p>
@@ -34,17 +48,21 @@
       <option id="distSur" value="5.40">Distrito Sur</option>
     </select>
 
-    <div>
+  <div>
     <p>Ingrese cantidad de kWh del mes consumidos</p>
     <input type="number" id="cantidadKWH" min="0" max="1000000000" onchange="inputKWH()" required></p>
-    </div>
+  </div>
   
-  <button onclick="calcular()">Calcular costo</button>
+  <button type="button" onclick="calcular()">Calcular costo</button>
+
 </div>
 </form>
 </fieldset>
 
-<div id="resultadoTotal"></div>
+<footer>
+  <p>© copyright www.epe.gob.ar ©</p>
+  <p>© Todos los derechos reservados ©</p>
+</footer>
 
 </body>
 </html>
