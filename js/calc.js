@@ -58,8 +58,6 @@ function inputKWH(){
 // FUNCION QUE HACE EL CALCULO DE TODO // 
  
 function calcular() {
-   // alert("El resultado es: ");
- 
    if(tipoUsuario == 0 || zonaValor == 0 || valorInputKWH <= 0 || valorInputKWH == "") {
      alert("Por favor, revise los datos ingresados");
    }
